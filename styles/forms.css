@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.form-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 3rem;
+}
+
+form {
+  background-color: #c32e4c;
+  color: white;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.logos-upload-form label {
+  padding: 10% 10% 0;
+}
+
+.logos-upload-form input {
+  padding: 10% 10% 10%;
+}
+
+.time-form fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  border: 0;
+}
+
+.time-form input {
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+.time-form button {
+  font-size: 2rem;
+  background: white;
+}
+
+.time-form button:hover {
+  background: lightgray;
+}
+
+footer {
+  font-size: 1rem;
+}

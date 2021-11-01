@@ -1,0 +1,154 @@
+body,
+p {
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+}
+
+main {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  justify-items: center;
+}
+
+main.amount-of-logos-1 {
+  grid-template-areas: "timer logo1";
+  grid-template-columns: repeat(2, 50%);
+}
+main.amount-of-logos-2 {
+  grid-template-areas:
+    "timer logo1"
+    "timer logo2";
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+}
+main.amount-of-logos-3 {
+  grid-template-areas:
+    "logo1 logo2"
+    "timer logo3";
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+}
+main.amount-of-logos-4 {
+  grid-template-areas:
+    "timer logo1 logo2"
+    "timer logo3 logo4";
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: repeat(2, 50%);
+}
+main.amount-of-logos-5 {
+  grid-template-areas:
+    "logo1 logo2 logo3"
+    "logo4 timer logo5";
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: repeat(2, 50%);
+}
+main.amount-of-logos-6 {
+  grid-template-areas:
+    "logo1 logo2 timer"
+    "logo3 logo4 timer"
+    "logo5 logo6 timer";
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: repeat(3, calc(100% / 3));
+}
+main.amount-of-logos-7 {
+  grid-template-areas:
+    "logo1 logo2 logo3"
+    "logo4 logo5 timer"
+    "logo6 logo7 timer";
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: repeat(3, calc(100% / 3));
+}
+main.amount-of-logos-8 {
+  grid-template-areas:
+    "logo1 logo2 logo3"
+    "logo4 timer logo5"
+    "logo6 logo7 logo8";
+  grid-template-columns: repeat(3, calc(100% / 3));
+  grid-template-rows: repeat(3, calc(100% / 3));
+}
+
+.logo-1 {
+  grid-area: logo1;
+}
+.logo-2 {
+  grid-area: logo2;
+}
+.logo-3 {
+  grid-area: logo3;
+}
+.logo-4 {
+  grid-area: logo4;
+}
+.logo-5 {
+  grid-area: logo5;
+}
+.logo-6 {
+  grid-area: logo6;
+}
+.logo-7 {
+  grid-area: logo7;
+}
+.logo-8 {
+  grid-area: logo8;
+}
+
+[class^="logo-"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7vh 7vw;
+  max-width: 400px;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.timer {
+  grid-area: timer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c32e4c;
+  text-align: center;
+  justify-self: normal;
+}
+.amount-of-logos-8 .timer {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#time {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 10px;
+}
+
+button {
+  color: white;
+  background: #c32e4c;
+  border: 5px solid white;
+  padding: 20px;
+  font-weight: bold;
+}
+
+button:hover {
+  color: #c32e4c;
+  background: white;
+  border: 5px solid white;
+}
+
+button:active {
+  transform: translate(2px, 2px);
+}
+
+#reset {
+  position: absolute;
+  bottom: 10px;
+  color: white;
+}
